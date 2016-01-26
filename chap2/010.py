@@ -14,7 +14,7 @@ hightemp.txtはutf-8
 入門Python3 p220 8.1.2参照
 '''
 
-f = open("hightemp.txt", "rt", encoding="utf-8")
+f = open("hightemp.txt", "rt")
 ans = f.readlines()
 print(len(ans))
 f.close()
