@@ -11,21 +11,8 @@ print(len(ans))
 f.close()
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    UnicodeDecodeError                        Traceback (most recent call last)
-
-    <ipython-input-54-72336aee9bde> in <module>()
-          1 #問題10
-          2 f = open("hightemp.txt", "rt")
-    ----> 3 ans = f.readlines()
-          4 print(len(ans))
-          5 f.close()
+    24
     
-
-    UnicodeDecodeError: 'cp932' codec can't decode byte 0x8c in position 8: illegal multibyte sequence
-
 
 
 ```python
