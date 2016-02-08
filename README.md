@@ -1,4 +1,5 @@
 # [自然言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/)
-gitとpythona(3)の練習ついでに  
+gitとpythonの練習ついでに  
 綺麗なコードは書けない  
-やる順番も適当です
+やる順番も適当です  
+.pyを載せようと思ったけどめんどいのでmarkdownだけうｐ予定
