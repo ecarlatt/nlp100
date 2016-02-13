@@ -129,3 +129,57 @@ xyz(x, y, z)
 
     12時の気温は22.4
     
+
+* 問題8
+
+
+```python
+test = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
+def cipher(input):
+    output = ""
+    for char in input:
+        if char.islower():
+            output += chr(219-ord(char))
+        else:
+            output += char
+    return output
+
+print(cipher(test))
+print(cipher(cipher(test)))
+```
+
+    Hr Hv Lrvw Bvxzfhv Blilm Clfow Nlg Ocrwrav Foflirmv. Nvd Nzgrlmh Mrtsg Aohl Srtm Pvzxv Svxfirgb Cozfhv. Aigsfi Krmt Czm.
+    Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can.
+    
+
+
+```python
+test = 'パタトクカシーー'
+print(cipher(test))
+print(cipher(cipher(test)))
+```
+
+    パタトクカシーー
+    パタトクカシーー
+    
+
+* 問題9
+
+
+```python
+import random
+test = "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
+test = test.split()
+ran = []
+for word in test:
+    if len(word) > 4:
+        char = list(word)
+        mid = char[1:-1]
+        random.shuffle(mid)
+        word =  char[0] + "".join(mid) + char[-1]
+    ran.append(word)
+print(" ".join(ran))
+```
+
+    I cudol'nt bveeile that I could acltlauy uetnanrsdd what I was raideng : the phmenoaenl poewr of the human mind .
+    
